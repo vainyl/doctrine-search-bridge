@@ -35,10 +35,8 @@ class SearchMappingFileDriverDecorator extends AbstractDoctrineFileDriverDecorat
         parent::loadMetadataForClass($className, $metadata);
 
         $element = $this->getElement($className);
-        if (!isset($element['search'])) {
-            throw new NoMetadataAliasException($this, $className);
+        if (isset($element['search'])) {
+            $metadata->getDomainMetadata()->setSearch($element['search']);
         }
-
-        $metadata->getDomainMetadata()->setSearch($element['search']);
     }
 }
