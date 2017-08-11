@@ -14,9 +14,9 @@
     },
     "require": {
         "php": ">=7.1",
-        "vainyl/core": "0.1.x",
-        "vainyl/doctrine-common-bridge": "0.1.x",
-        "vainyl/search": "0.1.x"
+        "vainyl/core": "dev-master",
+        "vainyl/doctrine-common-bridge": "dev-master",
+        "vainyl/search": "dev-master"
     },
     "repositories": [
         {
