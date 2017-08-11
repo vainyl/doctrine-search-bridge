@@ -1,0 +1,7 @@
+services:
+  doctrine.mapping.driver.search:
+    decorates: doctrine.mapping.driver
+    class: Vainyl\Doctrine\Search\Driver\Decorator\SearchMappingFileDriverDecorator
+    arguments: ['@doctrine.mapping.driver.search.inner']
+    tags:
+      - {name: mapping.driver.decorator}

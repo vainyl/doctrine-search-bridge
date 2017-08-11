@@ -1,0 +1,29 @@
+{
+    "name": "vainyl/doctrine-search-bridge",
+    "type": "shared-package",
+    "authors": [
+        {
+            "name": "Taras Girnyk",
+            "email": "taras.p.gyrnik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vainyl\\Doctrine\\Search\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "vainyl/core": "0.1.x",
+        "vainyl/doctrine-common-bridge": "0.1.x",
+        "vainyl/search": "0.1.x"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satis.vainyl.com:444"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
